@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #6dd5fa, #2980b9);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+  }
+  
+  .sudoku-board {
+    display: grid;
+    grid-template-columns: repeat(9, 45px);
+    gap: 3px;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .cell {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+    background-color: #fff;
+    color: #333;
+    border-radius: 5px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+  }
+  
+  .cell:focus {
+    outline: 2px solid #3498db;
+  }
+  
+  .actions {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    color: #fff;
+  }
+  
+  .solve {
+    background-color: #2ecc71;
+  }
+  .solve:hover {
+    background-color: #27ae60;
+  }
+  
+  .clear {
+    background-color: #e74c3c;
+  }
+  .clear:hover {
+    background-color: #c0392b;
+  }
